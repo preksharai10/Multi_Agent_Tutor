@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 
-API_URL = "http://localhost:8000/ask"  
+API_URL = "https://multi-agent-tutor-smq4.onrender.com/ask"  
 
 st.set_page_config(page_title="Multi-Agent Tutor", layout="centered")
 
