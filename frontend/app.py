@@ -10,7 +10,7 @@ st.set_page_config(page_title="Multi-Agent Tutor", layout="centered")
 if "history" not in st.session_state:
     st.session_state["history"] = []
 
-st.title("🎓 Multi-Agent Tutor")
+st.title(" Multi-Agent Tutor")
 st.markdown("Ask me anything related to **Math**, **Physics**, or **Chemistry**!")
 
 with st.form(key="query_form"):
