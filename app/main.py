@@ -31,5 +31,8 @@ async def ask_question(request: QueryRequest):
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         logger.error(f"Unhandled Exception: {e}\n{traceback.format_exc()}")
-        
         raise HTTPException(status_code=500, detail="Internal server error")
+    
+@app.get("/")
+def read_root():
+    return {"message": "Hello from AI Tutor!"}
