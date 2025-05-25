@@ -35,4 +35,4 @@ async def ask_question(request: QueryRequest):
     
 @app.get("/")
 def read_root():
-    return {"message": "Hello from AI Tutor!"}
+    return {"message": "Hello from AI Tutor !!"}
